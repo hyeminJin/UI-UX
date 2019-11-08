@@ -11,7 +11,14 @@ class Exercise7_18 {
 	// main
  } 
 class Robot {}
-class DanceRobot extends Robot { void dance() { 춤을 춥니다 System.out.println(" ."); } } class SingRobot extends Robot { void sing() { 노래를 합니다 System.out.println(" ."); } } class DrawRobot extends Robot { void draw() { 그림을 그립니다 System.out.println(" ."); } }
+class DanceRobot extends Robot { 
+	void dance() 
+	{ 
+	춤을 춥니다 System.out.println(" ."); 
+	} 
+}
+
+class SingRobot extends Robot { void sing() { 노래를 합니다 System.out.println(" ."); } } class DrawRobot extends Robot { void draw() { 그림을 그립니다 System.out.println(" ."); } }
 ======================================================================
 class TV {
 	private int size;
