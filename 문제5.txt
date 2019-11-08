@@ -1,3 +1,18 @@
+class Exercise7_18 {
+	 /* 메서드를 작성하시오 (1) action . */ 
+	 
+	public static void main(String[] args) { 
+	Robot[] arr = { new DanceRobot(), new SingRobot(), new DrawRobot()};
+	
+	for(int i=0; i< arr.length;i++) 
+	{ 
+		action(arr[i]); 
+	} 
+	// main
+ } 
+class Robot {}
+class DanceRobot extends Robot { void dance() { 춤을 춥니다 System.out.println(" ."); } } class SingRobot extends Robot { void sing() { 노래를 합니다 System.out.println(" ."); } } class DrawRobot extends Robot { void draw() { 그림을 그립니다 System.out.println(" ."); } }
+======================================================================
 class TV {
 	private int size;
 	public TV(int size) { this.size = size; }
