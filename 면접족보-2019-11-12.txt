@@ -1,5 +1,45 @@
-1.Object °´Ã¼¶õ ¹«¾ùÀÌ¸ç, ÇØ´ç °´Ã¼¿¡ ÀÖ´Â ÇÔ¼ö¸¦ ³ª¿­ÇÏ¿© º¸½Ã¿À.
-2.finalize ÇÔ¼ö´Â ¹«¾ùÀÎ°¡?
-2.String Å¬·¡½º ¿¡¼­ÀÇ equals ÇÔ¼ö¿¡ ´ëÇÏ¿© ¼³¸íÇÏ½Ã¿À.
-4.clone ÇÔ¼ö¿¡ ´ëÇÏ¿© ¼³¸íÇÏ½Ã¿À.
-5.Deep Ä«ÇÇ¿Í shllow Ä«ÇÇ¿¡ ´ëÇÏ¿© ¼³¸íÇÏ½Ã¿À. 
+1.Object ê°ì²´ë€ ë¬´ì—‡ì´ë©°, í•´ë‹¹ ê°ì²´ì— ìˆëŠ” í•¨ìˆ˜ë¥¼ ë‚˜ì—´í•˜ì—¬ ë³´ì‹œì˜¤.
+2.finalize í•¨ìˆ˜ëŠ” ë¬´ì—‡ì¸ê°€?
+2.String í´ë˜ìŠ¤ ì—ì„œì˜ equals í•¨ìˆ˜ì— ëŒ€í•˜ì—¬ ì„¤ëª…í•˜ì‹œì˜¤.
+4.clone í•¨ìˆ˜ì— ëŒ€í•˜ì—¬ ì„¤ëª…í•˜ì‹œì˜¤.
+5.Deep ì¹´í”¼ì™€ shllow ì¹´í”¼ì— ëŒ€í•˜ì—¬ ì„¤ëª…í•˜ì‹œì˜¤. 
+
+6.ì•„ë˜ì˜ í”„ë¡œê·¸ë˜ë°ì„ ì™„ì„±í•˜ì‹œì˜¤.
+class Business implements Cloneable {
+    private String company;
+    private String work;
+    
+    public Business(String company, String work) {
+        this.company = company;
+        this.work = work;
+    }
+    
+    public void showBusinessInfo() {
+        System.out.println("íšŒì‚¬: " + company);
+        System.out.println("ì—…ë¬´: " + work);
+    }
+    
+    public Business clone() throws CloneNotSupportedException {
+        Business copy = (Business)super.clone();
+        return copy;
+    }
+}
+===========================================================================
+class DeepCopyTest {
+    public static void main(String[] args) {
+        try {
+            PersonalInfo org =
+                      	new PersonalInfo("James", 22, "SimpeSound", "encoding");
+
+            PersonalInfo cpy = org.clone();
+			
+	    org.showPersonalInfo();
+            cpy.showPersonalInfo();
+        }
+        catch(CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
+    }
+}
+
+
