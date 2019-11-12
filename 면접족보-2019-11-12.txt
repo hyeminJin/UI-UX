@@ -4,7 +4,7 @@
 4.clone 함수에 대하여 설명하시오.
 5.Deep 카피와 shllow 카피에 대하여 설명하시오. 
 
-6.아래의 프로그래밍을 완성하시오.
+6.아래의 프로그래밍을 보고 PersonalInfo 을 완성하시오.
 class Business implements Cloneable {
     private String company;
     private String work;
@@ -41,5 +41,14 @@ class DeepCopyTest {
         }
     }
 }
-
+결과
+=========================================================
+이름: James
+나이: 22
+회사: SimpeSound
+업무: encoding
+이름: James
+나이: 22
+회사: SimpeSound
+업무: encoding
 
