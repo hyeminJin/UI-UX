@@ -1,12 +1,15 @@
-1.¿ÀÅä¹Ú½Ì°ú ¾ð¹Ú½Ì¿¡ ´ëÇÏ¿© ¼³¸íÇÏ½Ã¿À.
-2.³­¼ö »ý¼º ¹æ¹ý¿¡ ´ëÇÏ¿© ¼³¸íÇÏ½Ã¿À.
-3.StringTokenizer °´Ã¼ÀÇ »ç¿ë¹æ¹ýÀº?
-4.ÀÎ½ºÅÏ½º ÀÇ equals¸¦ ¿À¹ö¶óÀÌµðÀÌ ÇÏ´Â ÀÌÀ¯´Â ¹«¾ùÀÎ°¡¿ä?
-5. ¾Æ·¡ÀÇ Å¬·¡½º¸¦ ÀÌ¸§ÀÇ Ã¶ÀÚÀÇ °¹¼ö°¡ ÀÛÀº°ÍºÎÅÍ Á¤·ÄµÇµµ·Ï ¿Ï¼ºÇÏ½Ã¿À. 
+1.ì˜¤í† ë°•ì‹±ê³¼ ì–¸ë°•ì‹±ì— ëŒ€í•˜ì—¬ ì„¤ëª…í•˜ì‹œì˜¤.
+2.ë‚œìˆ˜ ìƒì„± ë°©ë²•ì— ëŒ€í•˜ì—¬ ì„¤ëª…í•˜ì‹œì˜¤.
+3.StringTokenizer ê°ì²´ì˜ ì‚¬ìš©ë°©ë²•ì€?
+4.ì¸ìŠ¤í„´ìŠ¤ ì˜ equalsë¥¼ ì˜¤ë²„ë¼ì´ë””ì´ í•˜ëŠ” ì´ìœ ëŠ” ë¬´ì—‡ì¸ê°€ìš”?
+
+5. ì•„ëž˜ì˜ í´ëž˜ìŠ¤ë¥¼ ì´ë¦„ì˜ ì² ìžì˜ ê°¯ìˆ˜ê°€ ìž‘ì€ê²ƒë¶€í„° ì •ë ¬ë˜ë„ë¡ ì™„ì„±í•˜ì‹œì˜¤. 
 class Person implements Comparable {
     private String name;
     private int age;
-
-6. °¡À§¹ÙÀ§º¸ °ÔÀÓÀ» Åä·ÐÇÏ¿© Â¥º¸µµ·Ï ÇÏ½Ã¿ä.
+    .......
+    .......
+    }
+6. ê°€ìœ„ë°”ìœ„ë³´ ê²Œìž„ì„ í† ë¡ í•˜ì—¬ ì§œë³´ë„ë¡ í•˜ì‹œìš”.
 
 
