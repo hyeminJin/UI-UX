@@ -1,3 +1,28 @@
+try{
+				
+				Class.forName(driver);	//oracle.jdbc.driver.OracleDriver
+				connection = DriverManager.getConnection(url, uid, upw);	//jdbc:oracle:thin:@localhost:1521:xe
+				statement = connection.createStatement();
+				resultSet = statement.executeQuery(query);	//select * from member
+				
+				while(resultSet.next()){
+					String name = resultSet.getString("ename");
+					String job = resultSet.getString("job");
+					String mgr = resultSet.getString("mgr");
+										
+					out.println("이름 : " + name + ", 직책 : " +job + ", 메니져 " + mgr + "<br />");
+				}
+				
+			} catch(Exception e) {
+			} finally {
+				try{
+					if(resultSet != null) resultSet.close();
+					if(statement != null) statement.close();
+					if(connection != null) connection.close();
+				} catch(Exception e){}
+			}
+
+======================================================================
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
