@@ -1,0 +1,23 @@
+1.DAO.DTO 에 대하여 설명하시오.
+2.VO 란 무엇인가?
+3.Statement 와  PreparedStatement 에 대하여 설명하시오.
+4.DBCP pool 이란 무엇인가?
+5.커넥션 풀을 가져오기 위한 아래의 코드를 완성하시오.
+	//Connection Pool 
+	private DataSource dataSource;
+	
+	public MemberPoolDAO() {
+	
+		try {
+			//완성하시오.
+		} catch (Exception e) {
+			e.printStackTrace();
+		}	
+	}
+6.sql 문에서 in 은 무엇인가요?
+7.overflow 와 float 태그에 대하여 설명하시오.
+8.emp 테이블에서 커밋션을 받는 직원의 이름 및 입사일을 아래의 조건으로 출력 하시오.
+   1)DAO DTO 클래스를 만들것. 
+   2)출력은 table 태그로 표현 할것.테이블 색상은 green 으로 할것 
+
+
