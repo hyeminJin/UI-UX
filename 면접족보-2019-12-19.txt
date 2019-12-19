@@ -1,0 +1,12 @@
+1.scope 영역 4가지의 범위는?
+2.el 은 무엇인가요?
+3. ${member.name} 을 액션태그 및 객체로 표현하시오.
+4.아래의 태그를 el 로 처리 하시오.
+	<%
+		String id = request.getParameter("id");
+		String pw = request.getParameter("pw");
+	%>
+	아이디 : <%= id %> <br />
+	비밀번호 : <%= pw %>
+5.JSTL을 사용 하는 방법은?
+6.http://192.168.6.25:8282/jsp_el/quiz-4.html 로 접속하여 해당 페이지를 html 로 구현하시오.
