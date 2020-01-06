@@ -1,0 +1,8 @@
+1.jquery 란 무엇인가?
+2.window.onload 를 jquery 로 바꾸시오(2가지)
+3.아래의 용어를 설명하시오.
+-무결성
+-Not null
+-unique
+-PK
+-FK
