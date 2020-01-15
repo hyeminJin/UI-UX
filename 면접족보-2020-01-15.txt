@@ -1,0 +1,5 @@
+1.스프링에서의 검증을 위한 인터페이스 이름과 검증하기 위한 소스구성은 어떻게 되는가?
+2.아래의 Annotation 에 대하여 설명하시오.
+@Autowired
+@Service
+@Repository
