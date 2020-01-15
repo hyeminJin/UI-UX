@@ -1,3 +1,18 @@
+<repositories>
+		<repository>
+	    	<id>oracle</id>
+	    	<url>http://www.datanucleus.org/downloads/maven2/</url>
+		</repository>
+	</repositories>
+	
+	
+	<!-- 오라클 JDBC 드라이버 -->
+		<dependency>
+		    <groupId>oracle</groupId>
+		    <artifactId>ojdbc6</artifactId>
+		    <version>11.2.0.3</version>
+		</dependency>
+===================================================================
 엠블랙 슈퍼에서는 고객을 관리하기 위해서 고객명, 주소 및 주민번호를 기록
 한 명단을 보유하고 있다. 물품관리를 위해서 각 물품마다 물품명, 단가, 수량 
 및 각 물품에 고유한 물품번호를 기록한다. 어느 한 물품을 여러 고객들이 구입 
