@@ -1,3 +1,24 @@
+  <!-- Query Loggers -->
+    <logger name="jdbc.sqlonly" additivity="false">
+        <level value="INFO" />
+        <appender-ref ref="console" />
+        <appender-ref ref="rollingAppender" />
+    </logger>
+    <logger name="jdbc.resultsettable" additivity="false">
+        <level value="INFO" />
+        <appender-ref ref="console" />
+    </logger>
+    <logger name="jdbc.sqltiming" additivity="false">
+        <level value="INFO" />  
+           <!--  <appender-ref ref="console"/>  -->
+    </logger>
+    <logger name="jdbc.resultset" additivity="false">
+        <level value="DEBUG" />
+    </logger>
+    <logger name="jdbc.audit" additivity="false">
+        <level value="DEBUG" />
+    </logger> 
+=========================================================
 <bean name="dataSourceSpied" class="org.springframework.jdbc.datasource.DriverManagerDataSource" >
 		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
 		<property name="url" value="jdbc:oracle:thin:@127.0.0.1:1521:XE" />
