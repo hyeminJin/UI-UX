@@ -1,0 +1,15 @@
+1.페이징 처리를 위한 아래의 변수에 대하여 설명하시오.
+int page; 
+int perPageNum; 	
+int startNum; 
+int endNum; 
+int totalCount; 
+boolean prev; 
+boolean next;
+int displayPageNum 
+
+2.오라클에서 rownum 에 대하여 설명하시오.
+
+3.paging 처리를 위한 오라클 SQL 구문을 정의하시오.
+
+4.현재 게시판 페이징 소스 코드에는 답변글이 제대로 정렬되어 나오지 않습니다. - 수정 부탁드립니다.
