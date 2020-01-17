@@ -1,5 +1,5 @@
 	<!--page=2&perPageNum=10 -->
-    <select id="selectBoardListPage" resultType="edu.bit.board.vo.BoardVO" parameterType="edu.bit.ex.page.Criteria">
+    <select id="selectBoardListPage" resultType="edu.bit.board.vo.BoardVO" parameterType="edu.bit.board.page.Criteria">
 		<![CDATA[
 		SELECT * FROM
 		(
