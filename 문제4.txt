@@ -1,3 +1,25 @@
+	<!--page=2&perPageNum=10 -->
+    <select id="selectBoardListPage" resultType="edu.bit.board.vo.BoardVO" parameterType="edu.bit.ex.page.Criteria">
+		<![CDATA[
+		SELECT * FROM
+		(
+	        SELECT
+	            A.*,
+	            ROWNUM AS RNUM,
+	            COUNT(*) OVER() AS TOTCNT
+	        FROM
+	            (
+	                SELECT
+	                    *
+	                FROM
+	                    mvc_board
+	                ORDER BY bid desc
+	             
+	            ) A
+	    )WHERE RNUM >= #{startNum} AND RNUM <= #{endNum}
+	  	]]>
+	</select>
+=====================================================================================================
 @Select("update mvc_board set bName = #{boardVO.bName}, bTitle = #{boardVO.bTitle}, bContent = #{boardVO.bContent} where bId = #{boardVO.bId}")
 	public void updateBoard(BoardVO boardVO);
 
