@@ -1,3 +1,16 @@
+		<dependency> 
+			<groupId>org.aspectj</groupId> 
+			<artifactId>aspectjweaver</artifactId> 
+			<version>${org.aspectj-version}</version> 
+		</dependency> 
+		
+		<dependency> 
+			<groupId>org.aspectj</groupId> 
+			<artifactId>aspectjtools</artifactId> 
+			<version>${org.aspectj-version}</version> 
+		</dependency>
+
+============================================================================	
 	<!--page=2&perPageNum=10 -->
     <select id="selectBoardListPage" resultType="edu.bit.board.vo.BoardVO" parameterType="edu.bit.board.page.Criteria">
 		<![CDATA[
