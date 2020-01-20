@@ -1,0 +1,9 @@
+1.AOP란 무엇인가?
+2.아래의 용어에 대하여 설명하시오.
+-Aspect
+-advice
+-jointpoint
+-pointcut
+-weaving
+3.aop를 적용하기 위한 2가지 방법에 대하여 설명하시오.
+-
