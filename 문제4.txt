@@ -1,4 +1,11 @@
 
+ <!--JSON-->
+		<dependency>
+		    <groupId>com.fasterxml.jackson.core</groupId>
+		    <artifactId>jackson-databind</artifactId>
+		    <version>2.5.4</version>
+		</dependency>
+ ===================================================
  <!-- 검사 URL -->
     <http auto-config="true" use-expressions="true">
         <intercept-url pattern="/login/loginForm" access="permitAll" />
