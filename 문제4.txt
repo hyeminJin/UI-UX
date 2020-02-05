@@ -1,3 +1,19 @@
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(locations={
+		"file:src/main/webapp/WEB-INF/spring/root-context.xml",
+		"file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml"})
+public class BoardControllerTest2 {
+
+	@Inject
+	BoardService boardService;		
+
+	@Test
+	public void listTest() throws Exception {
+		System.out.println(boardService.selectAllBoard());
+	}
+
+}		
+		=============================
 		<dependency>
 		    <groupId>org.mockito</groupId>
 		    <artifactId>mockito-all</artifactId>
